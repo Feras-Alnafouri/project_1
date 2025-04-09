@@ -1,0 +1,1251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/* //////////////////////////// Header and its contents ////////////////////////////// */
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,64,0, 0.9);
+    position: fixed;
+    z-index: 4;
+}
+
+.home_icon {
+    float: left;
+    margin: 10px 10px;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.search_bar {
+    float: left;
+    margin-top: 7px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    padding-left: 30px; 
+}
+
+.search_icon {
+    width: 30px;
+    height: 5px;
+    color: black;
+    position: absolute;
+    left: 50px;
+    top: 12px;
+}
+
+.header_menu li {
+    display: inline;
+    float: right;
+    
+   
+}
+
+.header_menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+.bar_2_list {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    line-height: 20px; 
+    margin-top: 35px;
+    margin-left: -60px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.bar_2:hover .bar_2_list{
+      visibility: visible;
+}
+
+.bar_2_list li a{
+    color: rgba(0,64,0,1);
+    font-family: sans-serif;
+}
+.header_menu{
+    position: relative;
+}
+.bar_1 {
+    position: relative;
+   
+}
+.bar_1::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+    margin-bottom: -5px;  
+}
+
+.bar_1:hover::before {
+    width: 100%;
+}
+
+/* //////////////////////////// Section 1 : Main Title //////////////////////////////////////// */
+
+.container{
+    width: 100%; 
+    margin: auto;
+}
+
+.div_title_parent{
+    background-image: url(../images/puzzle-3223941_1280.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+   
+}
+.div_title_overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+
+.div_title_center{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+.puzzels_title{
+    margin: auto;
+    width: 900px;
+    font-size: 50px;
+    color:rgb(255, 255, 255);
+    font-family: sans-serif;   
+    font-weight: 900;
+    margin-bottom: 15px; 
+   
+}
+
+.puzzels_par{
+    text-align: center;
+    font-family: sans-serif;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: smaller;
+}
+
+.btn_1{
+    width: 110px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: rgba(0,64,0, 1);
+    border: none;
+    margin-top: 20px;
+    font-family: sans-serif; 
+    font-size: 15px;
+}
+.btn_1:hover{
+    opacity: 0.5;
+}
+
+
+.btn_2{
+    width: 110px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    border-radius: 15px;
+    border: none;
+    font-family: sans-serif; 
+    font-size: 15px;
+
+}
+
+.btn_2:hover{
+    opacity: 0.5;
+}
+
+/* //////////////////////////////Section 2 : Welcome////////////////////////////////// */
+
+.h2_welcome{
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    font-weight: 800px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.div_welcome_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+}
+
+.div_welcome_parent{
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+}
+
+.div_wel_1{
+    width: 28%;
+    height: 200px;
+    float: left;
+    /* margin: auto; */
+    text-align: center;
+    line-height: 40px;
+    padding-top: 20px;
+    border: solid 1px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 10px;
+    color: darkgreen;
+}
+.middle_wel{
+    margin: 50px 8%;
+} 
+
+
+.div_wel_1:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+
+.div_wel_1:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 67, 22, 0.5);
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+
+.icons_wel{
+    font-size: xx-large;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+
+.div_wel_1_title{
+    color: black;
+    font-family: sans-serif;
+}
+
+.welcome_par{
+    color: gray;
+    font-family: sans-serif;
+}
+.div_wel_1:hover .div_wel_1_title{
+    color: white;
+}
+.div_wel_1:hover .welcome_par{
+    color: black;
+}
+
+
+.icons_wel{
+    opacity: 0.9;
+}
+
+
+.div_wel_1:hover .icons_wel{
+    opacity: 1;
+}
+.read_more_link{
+    cursor: pointer;
+    color: rgba(0,64,0,1);
+    text-decoration: none;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Section 3:Featured  Puzzels \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.featured_title{
+    padding-top: 10px;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    font-family: sans-serif;
+
+}
+
+.div_featured_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+    
+    
+    
+}
+.div_feat_parent{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,64,0, 0.1);
+}
+
+.div_feat_line_1{
+    width: 70%;
+    height: 180px;
+    margin: auto;
+    margin-top: 25px;  
+
+}
+
+.div_feat_line_1_a{
+    width: 31.6%;
+    height: 180px;
+    background-color: brown;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    color: white;
+    margin-bottom: 20px; 
+    font-family: sans-serif;  
+}
+
+.middle_featured{
+   margin: 0% 2.5%;
+}
+
+.d_a_1{
+    background-image: url(../images/64f57f8d6dcd597fb1770d57_solution-analytics.png);
+    background-size: cover;
+}
+.d_a_2{
+    background-image: url(../images/blogimage_1600x900_3.jpg);
+    background-size: cover;
+}
+.d_a_3{
+    background-image: url(../images/words.jpg);
+    background-size:cover;
+}
+
+.d_a_4{
+    background-image: url(../images/GettyImages-1360711872-scaled.jpg);
+    background-size: cover;
+}
+
+.d_a_5{
+    background-image: url(../images/pexels-byron-sullivan-2714266-5664491.jpg);
+    background-size: cover;  
+}
+
+.d_a_6{
+    background-image: url(../images/pexels-ann-h-45017-6266316.jpg);
+    background-size: cover;
+}
+
+.featured_h3{
+    font-size: small;
+}
+
+
+.btn_heart{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.heart{
+    font-size: large;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.btn_pin{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.pin{
+    font-size: large;
+    color: rgba(0, 0, 0, 0.5)
+    
+
+}
+
+.featured_overlay{
+    height: 100%;
+    visibility: hidden;
+    
+}
+
+.div_feat_line_1_a:hover .featured_overlay{
+    visibility: visible;
+    background-color: rgba(0,0, 0, 0.5);
+    
+}
+.featured_h2{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color:rgb(181, 181, 181);
+    font-family: sans-serif;
+    
+
+}
+.featured_h3{
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    
+}
+
+
+
+/* //////////////////////////////////////// Section 4 : Offers ///////////////////////////////////////// */
+
+.div_offer_parent{
+    height: 120vh;
+
+}
+
+.h2_offer{
+    padding-top: 70px;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.div_offer_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;   
+}
+
+
+.div_offer_up{
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 40px;    
+}
+
+.div_offer_1{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: auto;
+    position: relative;
+    border: 1px solid darkgreen;
+    border-radius: 10px;    
+    
+}
+
+.middle_offer{
+    margin:0% 5%
+}
+
+
+.div_offer_1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color:  rgba(18, 67, 22, 0.5);
+    transition: 1s;
+}
+
+.div_offer_1:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 67, 22, 0.5);
+    border-radius: 10px;
+    
+}
+
+
+.offer_icon{
+    font-size: 30px;
+    position:absolute;
+    top: 18px;
+    left: 16px;
+    color: darkgreen; 
+    opacity: 0.9;  
+}
+
+.div_offer_1:hover .offer_icon{
+    opacity: 1;
+}
+
+.div_offer_1_title{
+    position: absolute;
+    top: 18px;
+    left:60px;
+    font-family: sans-serif;    
+}
+
+.div_offer_1:hover .div_offer_1_title{
+    color: darkgreen;
+}
+
+.offer_par{
+    position: absolute;
+    top:80px ;
+    left: 60px;
+    color: rgb(110, 110, 110);
+    font-family: sans-serif;
+}
+
+.div_offer_1:hover .offer_par{
+    color: black;
+}
+
+
+/* ////////////////////////////////////// Section 5 : Choose ///////////////////////////////*/
+
+
+.choose_title{
+    padding-top: 10px;
+    font-size: 40px;
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+
+.div_choose_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    
+
+}
+
+.choose_par{
+    margin-bottom: 40px;
+    padding-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+   
+}
+
+
+.div_choose_parent{
+    width: 90%;
+    height: 100vh;  
+    margin: auto;
+    margin-bottom: -300px;
+}
+
+.div_choose_left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+.choose_list{
+    list-style-type:none; 
+    padding-left: 20px;
+}
+
+.choose_list li{
+    line-height: 40px;
+    font-family: sans-serif;
+    color: rgb(114, 114, 114);
+    font-size: small;
+}
+
+.check{
+    color: darkgreen;
+}
+
+
+.div_choose_right{
+    width: 50%;
+    height: 90%;
+    float: right;
+}
+
+.div_choose_right_image{
+    background-image: url(../images/vertical\ image.png);
+    background-position: center;
+    width: 350px;
+    height: 450px;
+    margin-left: 150px;
+    margin-bottom: 5px;
+    background-size: cover;
+    
+}
+.div_choose_round_1{
+    height: 15px;
+    width: 15px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    float: left;
+    margin-left: 290px;
+}
+
+.div_choose_round_2{
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+}
+
+.div_choose_round_3{
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+}
+.middle_choose_round_2{
+    margin: 0% 2.5%;
+}
+.div_choose_round_2:hover{
+    background-color: darkgreen
+}
+
+.div_choose_round_3:hover{
+    background-color: darkgreen
+}
+
+/* ////////////////////////////////////// Section 6 : First Half //////////////////////////////////////////// */
+
+
+.div_half_parent{
+    margin-top: 25%;
+    margin-bottom: 25%;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/sara-bach-zlxJIx0CzYw-unsplash.jpg);
+    background-attachment: fixed;
+    position: relative; 
+    background-repeat: no-repeat;  
+    background-size: cover;
+    
+}
+
+.div_half_overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+}
+
+
+.half_1_icons{
+    font-size: xx-large;
+    color: darkgreen;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+    
+.div_half_1{
+    width: 25%;
+    height: 120px;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+
+
+.div_half_1_main{
+    margin: auto;
+    width: 80%;
+    height: 80px;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+.half_desc{
+    padding-left: 70px;
+    
+}
+
+.half_span{
+    color:rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.half_num{
+    color:rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+
+/* ////////////////////////////////Section 7 : Prices //////////////////////////////////////// */
+
+.div_price_parent{
+    height: 100vh;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: -170px;
+}
+
+.div_price_line {
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.div_price_1{
+    position: relative;
+    margin-top: 50px;
+    width: 30%;
+    height: 60%;
+    float: left; 
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 2;
+    border: darkgreen solid 1px;
+    border-radius: 20px;
+   
+} 
+
+.div_price_1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 67, 22, 0.5);
+    height: 0;
+    z-index: -1;
+   
+}
+
+.div_price_1:hover::after{
+    height: 100%;
+    transition: 1s;
+    opacity: 0.7;
+    
+}
+
+
+.div_price_1:hover .h2_prices{
+    color: darkgreen
+}
+
+
+
+.div_price_round{
+    height: 90px;
+    width: 90px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 30px;
+    font-family: sans-serif;
+    border: rgba(00, 64, 00, 0.5) solid 1px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.div_price_1:hover .div_price_round{
+    border: rgb(1, 35, 1) solid 1px;
+ 
+}
+
+
+.h2_prop{
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+
+.middle_price{
+    margin: 0% 5%;
+    margin-top: 50px;
+}
+
+
+.h2_num{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+.h2_prices{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+.purchase_now{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid darkgreen 1px;
+}
+/* //////////////////////////////////////// Section 8 : Seconed Half //////////////////////////////////////////// */
+
+
+
+.div_half2_parent{
+    margin-top: 25%;
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/pexels-markusspiske-218443.jpg);
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background-size: cover;
+    
+}
+
+.div_half2_overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+}
+    
+.div_half2_1{
+    width: 33%;
+    height: 150px; 
+    float: left;
+    margin-top: 9%;
+    margin-left: 12%;
+    
+}
+
+.div_half2_image{
+    background-image: url(../images/logic.jpeg);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.image_1{
+    background-image: url(../images/pexels-emmy-e-1252107-2381069.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image_2{
+    background-image: url(../images/pexels-eric-campbell-2150975659-31431924.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.half_name{
+    padding-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    color:white;
+    font-family: sans-serif;
+}
+
+.job_title{
+    margin-top: -15px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    color: darkgreen;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.half_desc{
+    margin-right: 110px;
+    margin-left: -68px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/* //////////////////////////////////////// Section 9 : Types //////////////////////////////////////////////// */
+.h2_types{
+    padding-top: 10px;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+
+.div_types_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;}
+
+
+.div_types_parent{
+    width: 80%; 
+    height: 100vh;
+    margin: auto;      
+}
+
+
+.div_types_1{
+    float: left;
+    width: 30%;
+    background-color: rgba(198, 197, 197,0.5);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.types_overlay{
+    width: 100%;
+    height:200px ;
+    position: absolute;
+    background-color: rgba(0, 0,0, 0.3);
+    visibility: hidden;
+
+}
+
+.div_types_1:hover .types_overlay{
+    visibility: visible;
+}
+
+
+.types_middle{
+    margin: 0% 5%;
+    margin-top: 40px;
+}
+
+.div_types_1_image{
+    width: 90%;
+    margin: auto;
+    position: relative;  
+
+}
+
+.div_types_1_image img{
+    width: 100%;
+    
+}
+
+
+
+.div_types_1_icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+
+.div_types_1:hover .div_types_1_icons{
+    visibility: visible;  
+}
+
+
+.div_types_1_icons i{
+    color: beige;
+    background-color: rgba(0, 64, 0, 1);
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
+    line-height:45px ;
+}
+
+.div_types_1:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 64, 0, 0.5);
+    opacity:0
+}
+
+
+.div_types_1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+.div_types_1:hover .h2_types_1_info_title{
+    color: white;
+}
+
+.div_types_1:hover .h2_types_1_info_par{
+    color: darkgreen;
+}
+
+
+.h2_types_1_info_title{
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.h2_types_1_info_par{
+    margin-top: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+}
+
+/* ////////////////////////////////// Section 10 : News ///////////////////////////// */
+
+.div_news_parents{
+    width:85%;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.news {
+    width: 400px;
+   
+    margin: auto;
+    margin-bottom: 20px;
+  
+    
+}
+
+.div_types_line{
+    width: 100px;
+    height: 4px;
+    background-color: darkgreen;
+    margin: auto;
+    margin-bottom: 40px;}
+
+.div_news_1{
+    padding-top: 10px;
+    float: left;
+    width:30%;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    position: relative;
+   
+}
+
+.div_news_1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 64, 0, 0.5);
+    transition: 0.5s;
+    z-index: -3;
+}
+
+.div_news_1:hover::before{
+    height: 100%;
+}
+
+.news_mid{
+    margin:0% 5%
+
+}
+
+.div_news_1_image{
+    background-image: url(../images/colorful-puzzle-pieces-stockcake.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.div_news_1_icons i {
+    margin-right: 15px;
+    color: darkgreen;
+    margin-top: 15px;
+}
+
+
+.news_a{
+    text-decoration: none;
+}
+
+.news_span{
+    color: black
+}
+
+.div_news_1:hover .news_h2{
+    color: aliceblue;
+}
+
+.div_news_1:hover .p_news{
+    color: darkgreen;
+}
+
+.news_h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.p_news{
+    line-height: 15px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+
+.image_22{
+    background-image: url(../images/mod.png);
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.image_3{
+    background-image: url(../images/your\ own.png);
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+
+
+}
+.news_a{
+    color: darkgreen;
+}
+
+/* /* /////////////////////////// Section 11 : Last ///////////////////////////// */
+
+
+.div_last_parent{
+    margin:auto;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0,64,0, 0.1);
+    margin-top: 70px;
+}
+
+.div_last_image{
+    background-image: url(../images/puzzel.jpg);
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+.div_last_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    background-color: rgba(0, 100, 0, 0.9);
+    margin: auto;
+    text-align: center;
+    
+}
+
+.div_last_icon:hover{
+    background-color: rgba(0, 100, 0, 1);
+}
+
+.div_last_all{
+    margin: auto;
+    width: 300px;
+    height: 50px;
+  
+}
+
+
+.div_last_icon i{
+    line-height: 50px;
+    font-size: xx-large;
+    color: white;
+    padding-bottom: 30px;
+
+    
+}
+
+
+
+
+.h4_last{
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
