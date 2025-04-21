@@ -7,22 +7,22 @@
 
 header {
     width: 100%;
-    height: 40px;
-    background-color: rgba(0,64,0, 0.9);
+    height: 50px;
+    background-color: rgba(0,64,0, 0.8);
     position: fixed;
     z-index: 4;
 }
 
 .home_icon {
     float: left;
-    margin: 10px 10px;
+    margin: 15px 15px;
     color: aliceblue;
-    font-size: larger;
+    font-size: 25px;
 }
 
 .search_bar {
     float: left;
-    margin-top: 7px;
+    margin-top: 12px;
     border-radius: 20px;
     padding: 5px;
     border: none;
@@ -34,8 +34,8 @@ header {
     height: 5px;
     color: black;
     position: absolute;
-    left: 50px;
-    top: 12px;
+    left: 70px;
+    top: 17px;
 }
 
 .header_menu li {
@@ -53,14 +53,15 @@ header {
     font-size: small;
     margin-left: 10px;
     margin-right: 20px;
-    line-height: 40px;
+    line-height: 50px;
+    padding-right: 5px;
     cursor: pointer;
 }
 
 
 .bar_2_list {
     width: 150px;
-    height: 120px;
+    height: 150px;
     position: absolute;
     background-color: rgb(255, 255, 255);
     display: inline-block;
@@ -94,14 +95,14 @@ header {
     height: 2px;
     background-color: black;
     transition: 0.5s;
-    margin-bottom: -5px;  
+    margin-bottom: -7px;  
 }
 
 .bar_1:hover::before {
     width: 100%;
 }
 
-/* //////////////////////////// Section 1 : Main Title //////////////////////////////////////// */
+/* //////////////////////////////////// Section 1 : Main Title ////////////////////////////////////////////// */
 
 .container{
     width: 100%; 
@@ -216,7 +217,6 @@ header {
     width: 28%;
     height: 200px;
     float: left;
-    /* margin: auto; */
     text-align: center;
     line-height: 40px;
     padding-top: 20px;
@@ -255,7 +255,7 @@ header {
 .icons_wel{
     font-size: xx-large;
     margin-bottom: 10px;
-    color: darkgreen;
+    color:rgba(0, 64,0, 0.8);
 }
 
 .div_wel_1_title{
@@ -285,11 +285,11 @@ header {
 }
 .read_more_link{
     cursor: pointer;
-    color: rgba(0,64,0,1);
+    color: rgb(1, 52, 1);
     text-decoration: none;
 }
 
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Section 3:Featured  Puzzels \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Section 3:Featured  Puzzels \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .featured_title{
     padding-top: 10px;
@@ -307,10 +307,8 @@ header {
     height: 4px;
     background-color: darkgreen;
     margin: auto;
-    
-    
-    
 }
+
 .div_feat_parent{
     width: 100%;
     height: 100vh;
@@ -436,7 +434,7 @@ header {
 
 
 
-/* //////////////////////////////////////// Section 4 : Offers ///////////////////////////////////////// */
+/* //////////////////////////////////////// Section 4 : Offers //////////////////////////////////////////// */
 
 .div_offer_parent{
     height: 120vh;
@@ -463,15 +461,15 @@ header {
 
 
 .div_offer_up{
-    width: 85%;
+    width: 75%;
     height: 200px;
     margin: auto;
-    margin-bottom: 40px;    
+    margin-bottom: 20px;    
 }
 
 .div_offer_1{
-    width: 30%;
-    height: 100%;
+    width: 27%;
+    height: 180px;
     float: left;
     margin: auto;
     position: relative;
@@ -481,7 +479,7 @@ header {
 }
 
 .middle_offer{
-    margin:0% 5%
+    margin:0% 9.5%
 }
 
 
@@ -531,8 +529,12 @@ header {
     position: absolute;
     top:80px ;
     left: 60px;
-    color: rgb(110, 110, 110);
+    color: rgba(110, 110, 110,0.5);
     font-family: sans-serif;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
 }
 
 .div_offer_1:hover .offer_par{
@@ -540,7 +542,7 @@ header {
 }
 
 
-/* ////////////////////////////////////// Section 5 : Choose ///////////////////////////////*/
+/* ////////////////////////////////////// Section 5 : Choose //////////////////////////////////////////////////*/
 
 
 .choose_title{
@@ -579,9 +581,10 @@ header {
 }
 
 .div_choose_left{
-    width: 50%;
+    width: 450px;
     height: 100%;
     float: left;
+    margin-left: 80px;
 }
 
 
@@ -606,6 +609,7 @@ header {
     width: 50%;
     height: 90%;
     float: right;
+    margin-right: 21px;
 }
 
 .div_choose_right_image{
@@ -716,7 +720,7 @@ header {
 }
 
 
-/* ////////////////////////////////Section 7 : Prices //////////////////////////////////////// */
+/* ///////////////////////////////////////// Section 7 : Prices /////////////////////////////////////////////// */
 
 .div_price_parent{
     height: 100vh;
@@ -791,7 +795,6 @@ header {
 
 .div_price_1:hover .div_price_round{
     border: rgb(1, 35, 1) solid 1px;
- 
 }
 
 
@@ -828,9 +831,7 @@ header {
     border-radius: 10px;
     border: solid darkgreen 1px;
 }
-/* //////////////////////////////////////// Section 8 : Seconed Half //////////////////////////////////////////// */
-
-
+/* //////////////////////////////////////// Section 8 : Seconed Half ////////////////////////////////////////// */
 
 .div_half2_parent{
     
@@ -895,7 +896,7 @@ header {
     margin-top: -15px;
     margin-right: 100px;
     padding-bottom: 20px;
-    color: darkgreen;
+    color: rgb(46, 145, 46);
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 900;
@@ -910,8 +911,9 @@ header {
 
 
 /* //////////////////////////////////////// Section 9 : Types //////////////////////////////////////////////// */
+
 .h2_types{
-    padding-top: 10px;
+   
     font-size: 40px;
     margin: auto;
     text-align: center;
@@ -925,7 +927,7 @@ header {
     height: 4px;
     background-color: darkgreen;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 20px;}
 
 
@@ -944,7 +946,7 @@ header {
     padding: 10px;
     position: relative;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 10px;
     height: 300px;
 }
 
@@ -954,7 +956,6 @@ header {
     position: absolute;
     background-color: rgba(0, 0,0, 0.3);
     visibility: hidden;
-
 }
 
 .div_types_1:hover .types_overlay{
@@ -964,19 +965,17 @@ header {
 
 .types_middle{
     margin: 0% 5%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .div_types_1_image{
     width: 90%;
     margin: auto;
     position: relative;  
-
 }
 
 .div_types_1_image img{
-    width: 100%;
-    
+    width: 100%;   
 }
 
 
@@ -1015,8 +1014,7 @@ header {
     left: 0;
     background-color: rgba(0, 64, 0, 0.5);
     opacity:0;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
 
@@ -1049,7 +1047,7 @@ header {
 
 }
 
-/* ////////////////////////////////// Section 10 : News ///////////////////////////// */
+/* //////////////////////////////////////////// Section 10 : News /////////////////////////////////////////// */
 
 .div_news_parents{
     width:85%;
@@ -1191,7 +1189,7 @@ header {
     color: darkgreen;
 }
 
-/* /* /////////////////////////// Section 11 : Last ///////////////////////////// */
+/* /* //////////////////////////////////////// Section 11 : Last ///////////////////////////////////////////// */
 
 
 .div_last_parent{
@@ -1219,35 +1217,27 @@ header {
     height: 50px;
     border-radius: 50%;
     float: left;
-    background-color: rgba(0, 100, 0, 0.9);
+    background-color: rgba(0, 100, 0, 0.8);
     margin: auto;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .div_last_icon:hover{
-    background-color: rgba(0, 100, 0, 1);
+    background-color: rgb(0, 110, 0);
 }
 
 .div_last_all{
     margin: auto;
     width: 300px;
-    height: 50px;
-  
+    height: 50px; 
 }
-
 
 .div_last_icon i{
     line-height: 50px;
     font-size: xx-large;
     color: white;
-    padding-bottom: 30px;
-
-    
+    padding-bottom: 30px;  
 }
-
-
-
 
 .h4_last{
     margin: auto;
